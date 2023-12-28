@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="fenetre" alignment="CENTER" prefHeight="596.0" prefWidth="549.0" spacing="30.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+	<children>
+		<Label fx:id="titre" text="Nouvelle partie">
+			<VBox.margin>
+				<Insets top="10.0" />
+			</VBox.margin>
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Label>
+		<GridPane alignment="CENTER">
+			<columnConstraints>
+				<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+				<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+				<ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="150.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="100.0" valignment="CENTER" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#creerProfilBouton" prefWidth="125.0" text="Créer un profil">
+					<GridPane.margin>
+						<Insets />
+					</GridPane.margin>
+				</Button>
+				<MenuButton fx:id="menuProfils" mnemonicParsing="false" prefWidth="150.0" text="Choisir un profil" GridPane.columnIndex="2">
+					<items>
+						<MenuItem mnemonicParsing="false" text="popsimoke" />
+						<MenuItem mnemonicParsing="false" text="babar" />
+					</items>
+				</MenuButton>
+				<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="1">
+					<children>
+						<Label text="Profil choisi :" />
+						<ImageView fx:id="imageJoueur" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+						<Label fx:id="pseudoJoueur" text="Nom d'utilisateur" />
+					</children>
+				</VBox>
+			</children>
+			<VBox.margin>
+				<Insets left="50.0" right="50.0" />
+			</VBox.margin>
+		</GridPane>
+		<HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+			<children>
+				<VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" spacing="5.0">
+					<children>
+						<Button onAction="#changerImageBouton" prefWidth="150.0" text="Changer l'image" />
+						<ImageView fx:id="imagePerso" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+						<TextField fx:id="saisieTaille" promptText="Taille">
+							<VBox.margin>
+								<Insets left="20.0" right="20.0" />
+							</VBox.margin>
+						</TextField>
+						<TextField fx:id="saisiePort" managed="false" promptText="Port" visible="false">
+							<VBox.margin>
+								<Insets left="20.0" right="20.0" />
+							</VBox.margin>
+						</TextField>
+					</children>
+				</VBox>
+				<VBox alignment="CENTER_LEFT" prefHeight="172.0" prefWidth="166.0" spacing="7.0">
+					<children>
+						<RadioButton fx:id="soloRadio" mnemonicParsing="false" text="Solo" />
+						<RadioButton fx:id="multiCoopRadio" mnemonicParsing="false" text="Multijoueur coopératif" />
+						<RadioButton fx:id="multiCompetRadio" mnemonicParsing="false" text="Multijoueur compétitif" />
+					</children>
+				</VBox>
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" prefHeight="100.0" prefWidth="597.0" spacing="20.0">
+			<children>
+            <Button mnemonicParsing="false" onAction="#retourBouton" text="Retour" />
+				<Button mnemonicParsing="false" onAction="#lancerPartie" text="Lancer la partie" fx:id="lancerBouton">
+					<font>
+						<Font size="20.0" />
+					</font>
+				</Button>
+			</children>
+		</HBox>
+	</children>
+</VBox>

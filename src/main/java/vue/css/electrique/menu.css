@@ -1,0 +1,26 @@
+#fenetre {
+	-fx-background-color: radial-gradient(center 25% 25%, radius 60%, reflect, #111213 0%, #131934 100%);
+}
+
+#titre {
+	-fx-font-family: "monospace";
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(gaussian, black, 20px, 0.25, 0, 0);
+}
+
+.button {
+    -fx-border-radius: 5px;
+    -fx-padding: 6px;
+    -fx-font-size: 14pt;
+	-fx-background-color: #111;
+	-fx-text-fill: #fff;
+	-fx-font-family: "monospace";
+}
+
+.button:hover {
+	-fx-background-color: #eee;
+	-fx-text-fill: #000;
+	-fx-border-radius: 10px;
+	-fx-cursor: hand;
+	-fx-effect: dropshadow(gaussian, black, 10px, 0.2, 0, 0);
+}

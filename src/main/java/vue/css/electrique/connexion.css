@@ -1,0 +1,49 @@
+#fenetre {
+	-fx-background-color: radial-gradient(center 25% 25%, radius 60%, reflect, #111213 0%, #131934 100%);
+}
+
+.label {
+	-fx-font-family: "monospace";
+	-fx-text-fill: white;
+	-fx-font-size: 10pt;
+	-fx-effect: dropshadow(gaussian, black, 20px, 0.25, 0, 0);
+}
+
+.button, .menu-button {
+	-fx-border-radius: 5px;
+	-fx-font-size: 9pt;
+	-fx-background-color: #111;
+	-fx-text-fill: #fff;
+	-fx-font-family: "monospace";
+}
+
+.menu .label, .menu-item .label {
+	-fx-text-fill: black !important;
+	-fx-effect: none !important;
+}
+
+.menu-item:focused {
+	-fx-background-color: #00113e !important;
+	-fx-cursor: hand;
+}
+
+.menu-item:focused .label {
+	-fx-text-fill: #eee !important;
+}
+
+.button:hover {
+	-fx-background-color: #eee;
+	-fx-text-fill: #000;
+	-fx-cursor: hand;
+	-fx-effect: dropshadow(gaussian, black, 10px, 0.2, 0, 0);
+}
+
+.text-field {
+	-fx-font-family: "monospace";
+	-fx-background-color: #a4a4ff;
+	-fx-text-fill: black;
+	-fx-prompt-text-fill: #444;	 
+	-fx-highlight-fill: #00113e;	 
+	-fx-highlight-text-fill: #eee;	 
+	-fx-display-caret: true;	 
+}

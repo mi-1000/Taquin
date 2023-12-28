@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("../../../../resources/polices/GOTHAMMEDIUM.TTF");
+}
+
+#fenetre {
+	-fx-background-image: url("../../../../resources/images/espace.gif");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+.label {
+	-fx-font-family: "Gotham";
+	-fx-text-fill: white;
+	-fx-font-size: 10pt;
+	-fx-effect: dropshadow(gaussian, #f008, 20px, 0.25, 0, 0);
+}
+
+.button, .menu-button {
+	-fx-border-radius: 5px;
+	-fx-font-size: 9pt;
+	-fx-background-color: #111;
+	-fx-text-fill: #fff;
+	-fx-font-family: "Gotham";
+}
+
+.menu .label, .menu-item .label {
+	-fx-text-fill: black !important;
+	-fx-effect: none !important;
+}
+
+.menu-item:focused {
+	-fx-background-color: #eee !important;
+	-fx-cursor: hand;
+}
+
+.menu-item:focused .label {
+	-fx-text-fill: #f00 !important;
+}
+
+.menu-item:focused .text {
+	-fx-effect: dropshadow(gaussian, #f008, 15px, 0.5, 0, 0);
+}
+
+.button:hover {
+	-fx-text-fill: #f00;
+	-fx-cursor: hand;
+}
+
+.button:hover .text {
+	-fx-effect: dropshadow(gaussian, #f008, 15px, 0.5, 0, 0);
+}
+
+.text-field {
+	-fx-font-family: "Gotham";
+	-fx-background-color: #ffdfdf;
+	-fx-text-fill: black;
+	-fx-prompt-text-fill: #444;
+	-fx-highlight-fill: #b00; 
+	-fx-highlight-text-fill: #eee;	 
+	-fx-display-caret: true; 
+}
+
+.radio-button {
+	-fx-font-size: 8pt;
+	-fx-background-color: #1111;
+	-fx-text-fill: #fff;
+	-fx-font-family: "Gotham";
+}
+
+.radio-button .radio {
+    -fx-background-color: #eee;
+    -fx-border-color: #eee;
+    -fx-shape: "M 0 0 L 8 0 L 8 8 L 0 8 Z";
+}
+
+.radio-button:hover {
+	-fx-cursor: hand;
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #f00;
+}
+
+.radio-button .radio .dot {
+	-fx-background-color: transparent;
+}
+
+#titre {
+	-fx-font-size: 36pt !important;
+	-fx-text-fill: #f00;
+	-fx-effect: dropshadow(gaussian, #f008, 10px, 0.2, 0, 0);
+}
+
+.table-view, .table-view:focused, .table-view .filler {
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+	-fx-background-color: #9f0000;
+}
+
+.table-view .column-header-background .label {
+	-fx-background-color: transparent;
+	-fx-text-fill: white;
+}
+
+.table-view .column-header-background .label .text {
+	-fx-effect: dropshadow(gaussian, #fff8, 15px, 0.5, 0, 0);
+}
+
+.table-view .column-header {
+	-fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+	-fx-text-fill: #000;
+}
+
+.table-row-cell {
+	-fx-background-color: -fx-table-cell-border-color, #ff6f72;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+	-fx-font-family: "Gotham";
+	-fx-font-size: 8pt;
+	-fx-text-fill: #111;
+}
+
+.table-row-cell:odd {
+	-fx-background-color: -fx-table-cell-border-color, #ffa4a6;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0;
+}
+
+.table-row-cell:selected {
+	-fx-background-color: #970004;
+	-fx-background-insets: 0;
+	-fx-background-radius: 1;
+}
+
+.table-row-cell:selected .cell {
+	-fx-text-fill: #eee !important;
+}
+
+.table-row-cell:selected .cell .text {
+	-fx-effect: dropshadow(gaussian, #f008, 20px, 0.75, 0, 0);
+}
+
+.table-view>.virtual-flow>.scroll-bar:vertical, .table-view>.virtual-flow>.scroll-bar:vertical>.track,
+	.table-view>.virtual-flow>.scroll-bar:vertical>.track-background,
+	.table-view>.virtual-flow>.scroll-bar:horizontal, .table-view>.virtual-flow>.scroll-bar:horizontal>.track,
+	.table-view>.virtual-flow>.scroll-bar:horizontal>.track-background {
+	-fx-background-color: transparent;
+}
+
+.table-view>.virtual-flow>.scroll-bar>.increment-button, .table-view>.virtual-flow>.scroll-bar>.decrement-button
+	{
+	-fx-opacity: 0;
+}

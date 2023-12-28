@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("../../../../resources/polices/GOTHAMMEDIUM.TTF");
+}
+
+#fenetre {
+	-fx-background-image: url("../../../../resources/images/espace.gif");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+.label {
+	-fx-font-family: "Gotham";
+	-fx-text-fill: white;
+	-fx-font-size: 10pt;
+	-fx-effect: dropshadow(gaussian, #f008, 20px, 0.25, 0, 0);
+}
+
+.button, .menu-button {
+	-fx-border-radius: 5px;
+	-fx-font-size: 9pt;
+	-fx-background-color: #111;
+	-fx-text-fill: #fff;
+	-fx-font-family: "Gotham";
+}
+
+.menu .label, .menu-item .label {
+	-fx-text-fill: black !important;
+	-fx-effect: none !important;
+}
+
+.menu-item:focused {
+	-fx-background-color: #eee !important;
+	-fx-cursor: hand;
+}
+
+.menu-item:focused .label {
+	-fx-text-fill: #f00 !important;
+}
+
+.menu-item:focused .text {
+	-fx-effect: dropshadow(gaussian, #f008, 15px, 0.5, 0, 0);
+}
+
+.button:hover {
+	-fx-text-fill: #f00;
+	-fx-cursor: hand;
+}
+
+.button:hover .text {
+	-fx-effect: dropshadow(gaussian, #f008, 15px, 0.5, 0, 0);
+}
+
+.text-field {
+	-fx-font-family: "Gotham";
+	-fx-background-color: #ffdfdf;
+	-fx-text-fill: black;
+	-fx-prompt-text-fill: #444;
+	-fx-highlight-fill: #b00; 
+	-fx-highlight-text-fill: #eee;	 
+	-fx-display-caret: true; 
+}

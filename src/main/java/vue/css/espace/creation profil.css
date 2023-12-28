@@ -1,0 +1,50 @@
+@font-face {
+	font-family: "Gotham";
+	src: url("../../../../resources/polices/GOTHAMMEDIUM.TTF");
+}
+
+#fenetre {
+	-fx-background-image: url("../../../../resources/images/espace.gif");
+	-fx-background-size: stretch;
+	-fx-background-repeat: no-repeat;
+}
+
+.label {
+	-fx-font-family: "monospace";
+	-fx-text-fill: white;
+	-fx-font-size: 10pt;
+	-fx-effect: dropshadow(gaussian, black, 20px, 0.25, 0, 0);
+}
+
+.button {
+	-fx-border-radius: 5px;
+	-fx-padding: 6px;
+	-fx-font-size: 14pt;
+	-fx-background-color: #111;
+	-fx-text-fill: #fff;
+	-fx-font-family: "Gotham";
+}
+
+.button:hover {
+	-fx-text-fill: #f00;
+	-fx-cursor: hand;
+}
+
+.button:hover .text {
+	-fx-effect: dropshadow(gaussian, #f008, 15px, 0.5, 0, 0);
+}
+
+.text-field {
+	-fx-font-family: "Gotham";
+	-fx-background-color: #ffdfdf;
+	-fx-text-fill: black;
+	-fx-prompt-text-fill: #444;
+	-fx-highlight-fill: #b00; 
+	-fx-highlight-text-fill: #eee;	 
+	-fx-display-caret: true;
+}
+
+#imageJoueur:hover {
+	-fx-blend-mode: screen;
+	-fx-cursor: hand;
+}

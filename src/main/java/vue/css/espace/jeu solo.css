@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("../../../../resources/polices/GOTHAMMEDIUM.TTF");
+}
+
+#fenetre {
+	-fx-background-image: url("../../../../resources/images/espace.gif");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+.label {
+	-fx-font-family: "Gotham";
+	-fx-text-fill: #f00;
+	-fx-font-size: 10pt;
+	-fx-effect: dropshadow(gaussian, #f00, 5px, 0.2, 0, 0);
+}
+
+.cases>.label {
+	-fx-effect: null;
+	-fx-border-radius: 5px;
+	-fx-text-fill: #0f0 !important;
+}
+
+.cases>.label .text {
+	-fx-font-family: "Gotham";
+	-fx-font-size: 13pt;
+	-fx-effect: dropshadow(gaussian, #0f08, 10px, 0.25, 0, 0);
+}
+
+#nbCoups {
+	-fx-text-fill: #eee;
+	-fx-effect: dropshadow(gaussian, #fff8, 10px, 0.25, 0, 0);
+	-fx-font-size: 9pt !important;
+	-fx-margin: 5px;
+}
+
+#victoireLabel {
+	-fx-text-fill: #0d3 !important;
+	-fx-effect: dropshadow(gaussian, #0d38, 10px, 0.25, 0, 0);
+}
+
+#chrono {
+	-fx-text-fill: #ff0 !important;
+	-fx-effect: dropshadow(gaussian, #ff08, 10px, 0.25, 0, 0);
+}
+
+.button {
+    -fx-border-radius: 5px;
+    -fx-padding: 3px;
+    -fx-font-size: 11pt;
+	-fx-background-color: #111;
+	-fx-text-fill: #fff;
+	-fx-font-family: "Gotham";
+}
+
+.button:hover {
+	-fx-text-fill: #f00;
+	-fx-cursor: hand;
+}
+
+.button:hover .text {
+	-fx-effect: dropshadow(gaussian, #f008, 15px, 0.5, 0, 0);
+}

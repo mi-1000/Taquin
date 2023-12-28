@@ -1,0 +1,52 @@
+#fenetre {
+	-fx-background-color: radial-gradient(center 25% 25%, radius 60%, reflect, #111213 0%, #131934
+		100%);
+}
+
+.label {
+	-fx-font-family: "monospace";
+	-fx-text-fill: white;
+	-fx-font-size: 10pt;
+	-fx-margin: 2px;
+	-fx-effect: dropshadow(gaussian, black, 20px, 0.25, 0, 0);
+}
+
+.cases>.label {
+	-fx-effect: dropshadow(gaussian, black, 5px, 0.25, 0, 0);
+}
+
+.cases>.label .text {
+	-fx-font-family: "monospace";
+	-fx-font-size: 13pt;
+	-fx-text-fill: #fff;
+	-fx-effect: dropshadow(gaussian, black, 10px, 0.25, 0, 0);
+}
+
+#nbCoups {
+	-fx-font-size: 9pt !important;
+}
+
+#victoireLabel {
+	-fx-text-fill: #00dd32 !important;
+}
+
+#chrono {
+	-fx-text-fill: #ffff04 !important;
+}
+
+.button {
+	-fx-border-radius: 5px;
+	-fx-padding: 3px;
+	-fx-margin: 5px;
+	-fx-font-size: 11pt;
+	-fx-background-color: #111;
+	-fx-text-fill: #fff;
+	-fx-font-family: "monospace";
+}
+
+.button:hover {
+	-fx-background-color: #eee;
+	-fx-text-fill: #000;
+	-fx-cursor: hand;
+	-fx-effect: dropshadow(gaussian, black, 10px, 0.2, 0, 0);
+}
